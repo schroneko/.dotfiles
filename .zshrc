@@ -22,6 +22,7 @@ alias gp='git push'
 alias gs='git status'
 alias sz='source ~/.zshrc'
 alias vz='vi ~/.zshrc'
+alias vv='vi ~/.vimrc'
 
 # 環境変数
 export LANG=ja_JP.UTF-8
