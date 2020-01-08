@@ -1,9 +1,9 @@
-## update with this command
-# echo "### .zshrc updating"
-# curl -OL https://raw.githubusercontent.com/schroneko/dotfiles/master/.zshrc
-# mv .zshrc ~/.zshrc
-# source ~/.zshrc
-# echo "### .zshrc updated"
+"""
+# update with this command
+echo "### .zshrc updating"
+curl -OL https://raw.githubusercontent.com/schroneko/dotfiles/master/.zshrc
+echo "### .zshrc updated"
+"""
 
 alias v='vim'
 alias vi='vim'

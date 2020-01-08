@@ -1,5 +1,4 @@
 " curl -OL https://raw.githubusercontent.com/schroneko/dotfiles/master/.vimrc
-" mv .vimrc ~/.vimrc
 
 " setting
 "文字コードをUFT-8に設定
