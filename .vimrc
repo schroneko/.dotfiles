@@ -64,7 +64,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 "===== 表示設定 =====
 set title "編集中ファイル名の表示
-set showmatch "括弧入力時に対応する括弧を示す
 set list "タブ、空白、改行を可視化
 set visualbell "ビープ音を視覚表示
 set laststatus=2 "ステータスを表示
@@ -102,3 +101,6 @@ inoremap <C-k>  <up>
 inoremap <C-h>  <left>
 inoremap <C-l>  <right>
 
+nnoremap == gg=G
+filetype on
+filetype plugin indent on
