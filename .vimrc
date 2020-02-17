@@ -86,6 +86,5 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
-set paste
 set whichwrap=h,l
 
