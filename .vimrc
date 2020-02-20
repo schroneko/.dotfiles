@@ -88,9 +88,7 @@ nnoremap g# g#zz
 set whichwrap=h,l
 
 "括弧の補完
-inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
@@ -104,3 +102,5 @@ inoremap <C-l>  <right>
 nnoremap == gg=G
 filetype on
 filetype plugin indent on
+
+autocmd BufNewFile,BufRead *.{html,vue*} set filetype=html

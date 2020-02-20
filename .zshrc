@@ -58,3 +58,6 @@ zstyle ':vcs_info:*' actionformats '(%b(%a)%c%u)'
 #add-zsh-hook precmd _update_vcs_info_msg
 PROMPT="%{${fg[green]}%}%n%{${reset_color}%}@%F{blue}localhost%f:%1(v|%F{red}%1v%f|) $ "
 RPROMPT='[%F{green}%d%f]'
+
+# node path
+export PATH=$HOME/.nodebrew/current/bin:$PATH
