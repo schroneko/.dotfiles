@@ -13,8 +13,8 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
- 
- 
+
+
 " 見た目系
 " 行番号を表示
 set number
@@ -69,7 +69,7 @@ set visualbell "ビープ音を視覚表示
 set laststatus=2 "ステータスを表示
 set ruler "カーソル位置を表示
 syntax on "コードに色をつける
- 
+
 "===== 文字、カーソル設定 =====
 set fenc=utf-8 "文字コードを指定
 set virtualedit=onemore "カーソルを行末の一つ先まで移動可能にする
@@ -92,6 +92,7 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
+inoremap [ []<LEFT>
 
 "インサートモードでも移動
 inoremap <C-j>  <down>
@@ -104,3 +105,13 @@ filetype on
 filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.{html,vue*} set filetype=html
+
+inoremap jj <Esc>
+set backspace=indent,eol,start
+nnoremap Y y$
+autocmd BufWritePre * :%s/\s\+$//ge
+set colorcolumn=80
+
+set spell
+set spelllang=en,cjk
+
